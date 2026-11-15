@@ -132,3 +132,16 @@ todo = "deny"
 needless_borrow = "allow"
 needless_borrows_for_generic_args = "allow"
 
+
+# Image platform selection for --target-arch (composefs-rs#455) is not yet
+# in a composefs-rs release. All composefs crates come from the same rev
+# so their types stay compatible.
+[patch.crates-io]
+composefs = { git = "https://github.com/composefs/composefs-rs", rev = "ed4242a182e9c2cd76640f5da6abda31353d9beb" }
+composefs-boot = { git = "https://github.com/composefs/composefs-rs", rev = "ed4242a182e9c2cd76640f5da6abda31353d9beb" }
+composefs-ctl = { git = "https://github.com/composefs/composefs-rs", rev = "ed4242a182e9c2cd76640f5da6abda31353d9beb" }
+composefs-fuse = { git = "https://github.com/composefs/composefs-rs", rev = "ed4242a182e9c2cd76640f5da6abda31353d9beb" }
+composefs-ioctls = { git = "https://github.com/composefs/composefs-rs", rev = "ed4242a182e9c2cd76640f5da6abda31353d9beb" }
+composefs-oci = { git = "https://github.com/composefs/composefs-rs", rev = "ed4242a182e9c2cd76640f5da6abda31353d9beb" }
+composefs-splitdirfdstream = { git = "https://github.com/composefs/composefs-rs", rev = "ed4242a182e9c2cd76640f5da6abda31353d9beb" }
+composefs-storage = { git = "https://github.com/composefs/composefs-rs", rev = "ed4242a182e9c2cd76640f5da6abda31353d9beb" }
